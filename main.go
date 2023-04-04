@@ -17,6 +17,7 @@ import (
 // State is a state
 type State [5]uint8
 
+// https://sci.esa.int/web/xmm-newton/-/61070-investigating-the-expansion-of-the-universe-combining-type-ia-supernovas-and-quasars
 func main() {
 	var state State
 	rnd, states, points := rand.New(rand.NewSource(1)), make(map[State]bool), make(plotter.XYs, 0, 8)
